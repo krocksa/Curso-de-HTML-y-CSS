@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    color: red;
+    list-style-type: none;
+    display: inline;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.menu li a {
+    color:  red;
+}
+
+.ingredientes {
+    list-style-position: inside;
+}
+
+.caja{
+    width: 100%;
+    height: 100vh;
+    /* 
+    margin: 20px;
+    padding: 20px;  
+    */
+    background-color: blueviolet;
+    background-image: url("../imagenes/202415-INFO-malla_curricular_page-0001.jpg");
+    background-size: cover; /* Agarra toda el ancho del contenedor (cover). Esta propiedad está por encima de backgnd img. */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    border-radius: 30%;
+}
+
+.caja p {
+    text-align: center;
+    line-height: 20px;
+    text-decoration: underline double #894297; /* Esta propiedad nos decora el texto */
+}

@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    width: 900px;
+    background-color: lightskyblue;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    display: grid;
+    place-items: center;
+}
+
+.cards{
+    display: flex;
+    width: 1100px;
+    gap: 3rem;
+}
+
+.card{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: lightseagreen;
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.card img{
+    max-width: 100%;
+}
+
+/* Transitions */ /* Ver la documentación de CSS Transitions en Mozilla */
+
+.box1, .box2, .box3, .box4{
+    /* transition: width 1s, background-color 10s; */
+    transition-duration: 1s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.62, 0.71, 0, 0.55);
+    transition-delay: 0;
+    transition-behavior: 0;
+}
+
+.box1:hover, .box2:hover, .box3:hover, .box4:hover{
+
+    width: 100%;
+    background-color: #00a971;
+}
+
+
+/* Animations */
+
+.box1, .box2, .box3, .box4{
+    /* animation: animationBoxes 2s; */
+    animation-name: animationBoxes;
+    animation-duration: 2s;
+    animation-delay: 0;
+    animation-timing-function: cubic-bezier(0.18, 0.89, 0.14, 0.94);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animationBoxes {
+
+    from{
+        width: 25%;
+        background-color: #cdbc01;
+    }
+
+    100% {
+        width: 100%;
+    background-color: #00d48e;
+
+    }
+}
+
+/* Desde los 18:20min del video, ver la parte de CCS GRADIENTS */
+
+.box4{
+    background: #ae4c4c;
+    background: linear-gradient(120deg, #930303 5%, #0e840e 58%, #0404b0 73%);
+}
+
+/* Transforms */
+
+.box4{
+    transition: transform 1s;
+}
+
+.box4:hover{
+    transform: rotate(360deg) scale(2) skew(360deg);
+}
+
+.card{
+     transition: all 1s;
+}
+
+.card:hover{
+    transform: scale(1.1) translateY(-70px);
+    box-shadow: rgba(103, 52, 52, 0.479) 0px 19px 38px, rgba(141, 2, 2, 0.475) 0px 15px 20px;
+}
+
+/* Ver las págs de la desripción del video de youtube. */

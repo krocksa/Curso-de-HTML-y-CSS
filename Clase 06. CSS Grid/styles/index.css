@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boxes {
+  width: 800px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+  "box2   box3   box1   box1"
+  "box2   box3   box4   box5"
+  "box6   box6   box4   box5";
+}
+
+.box{
+    border: 1px solid black;
+}
+
+.box1{grid-area: box1;}
+.box2{grid-area: box2;}
+.box3{grid-area: box3;}
+.box4{grid-area: box4;}
+.box5{grid-area: box5;}
+.box6{grid-area: box6;}

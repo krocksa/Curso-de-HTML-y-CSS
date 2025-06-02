@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+
+header {
+  background-color: #9e47f5;
+  display: flex;
+  gap: 2%;
+  grid-gap: 2%;
+}
+
+.logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center; /* Esta propiedad solo funciona bien, si se usa antes de ella display: flex; */
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  gap: 10px;
+  grid-gap: 10px;
+}
+
+.menu_item a {
+  color: black;
+  text-decoration: none;
+  font-size: large;
+}
+
+.menu_item.active a {
+  text-decoration: underline double;
+  color: #960000;
+}
+
+.menu_item a:hover {
+    color: #91771b;
+    text-decoration: underline double;
+}
+
+.imgPrincipal{
+  height: 80vh;
+  background-image: url("../img/paisaje.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 1%;
+}
+
+.imgPrincipal h2{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-inline: 15px;
+}
+
+.imgPrincipal p{
+  color: white;
+  text-align: center;
+  padding-inline: 30%;
+}
+
+.cards {
+  padding: 30px 60px;
+  display: flex;
+  gap: 30px;
+}
+
+.card{
+  background-color: #ba75ff;
+  border: 10px solid #009ad6;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
+  /* flex: 1; */
+}
+
+.card_img{
+  max-width: 100%;
+}
+
+.card_info{
+  padding: 0 20px 20px 20px;
+}
+
+.card_button{
+  background-color: #00c3ff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.card_button a{
+  color: black;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.card_button a:hover {
+  color: #b60505;
+  text-decoration: underline double;
+}
+
+.card_wpp {
+  width: 65px;
+  position: absolute;
+  right: 20px;
+  /*   bottom: 20px;   */ /* A veces no hace falta */
+}
+
+.card1{
+  flex: 1;
+}
+
+.card2{
+  flex: 1;
+}
+
+.card3{
+  flex: 1;
+}
+
+.footer{
+  background-color: #00c3ff;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  padding-block: 20px;
+}
+.footer p {
+  font-size: larger;
+}
